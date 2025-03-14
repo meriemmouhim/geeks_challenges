@@ -23,7 +23,7 @@ class Pagination:
         self.currentPage = self.totalPages
         return self
     def goToPage(self, pageNum):
-        pageNum = int(pageNum) t
+        pageNum = int(pageNum)
         if pageNum < 1:
             self.currentPage = 1
         elif pageNum > self.totalPages:
