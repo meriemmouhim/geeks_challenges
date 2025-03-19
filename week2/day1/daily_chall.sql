@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 DROP TABLE IF EXISTS actors;
 -- -- Create table
 CREATE TABLE actors (
@@ -29,8 +28,6 @@ SELECT * FROM actors;
 -- first_name,last_name = the value that we insert
 -- age,number.. = will be = NULL
 
-
-=======
 DROP TABLE IF EXISTS actors;
 -- -- Create table
 CREATE TABLE actors (
@@ -61,5 +58,3 @@ SELECT * FROM actors;
 -- first_name,last_name = the value that we insert
 -- age,number.. = will be = NULL
 
-
->>>>>>> 7d98ab1 (day 2 exercises)

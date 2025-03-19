@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 -- -- create items table
 CREATE TABLE items(
     item_id SERIAL PRIMARY KEY,
@@ -42,8 +41,8 @@ SELECT * FROM customers
 WHERE last_name = 'Jones';
 -- All customers whose firstname is not ‘Scott’.
 SELECT * FROM customers
-WHERE NOT first_name = 'Scott'
-=======
+WHERE NOT first_name = 'Scott' 
+
 -- -- create items table
 CREATE TABLE items(
     item_id SERIAL PRIMARY KEY,
@@ -99,4 +98,3 @@ SELECT * FROM customers;
 SELECT first_name, last_name FROM customers ORDER BY first_name ASC LIMIT 3;
 -- All custemrs grouped by first letter in descending order
 SELECT last_name FROM customers ORDER BY last_name DESC
->>>>>>> 7d98ab1 (day 2 exercises)
