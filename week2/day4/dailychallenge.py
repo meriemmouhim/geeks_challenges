@@ -1,7 +1,6 @@
 import sqlite3
 import requests
 import random
-
 conn = sqlite3.connect('postgres.db')
 cursor = conn.cursor()
 cursor.execute('''CREATE TABLE IF NOT EXISTS countries (
