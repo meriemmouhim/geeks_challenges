@@ -1,5 +1,5 @@
 import sqlite3
-import requests
+import requests # type: ignore
 import random
 conn = sqlite3.connect('postgres.db')
 cursor = conn.cursor()
