@@ -1,0 +1,10 @@
+const div = document.getElementById('navar');
+div.id = 'socialNetworkNavigation';
+const newLi =document.createElement('li');
+newLi.textContent = 'Logout';
+div.ul.appendChild(newLi);
+const list = document.querySelector('ul');
+const firstItem = list.firstElementChild;
+const lastItem = list.lastElementChild;
+console.log("First item:", firstItem.textContent);
+console.log("Last item:", lastItem.textContent);
