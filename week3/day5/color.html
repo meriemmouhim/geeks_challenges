@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>why draw on pc just draw on paper :(</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            margin-bottom: 10px;
+        }
+        
+        .drawing-container {
+            margin: 20px auto;
+            width: 800px;
+        }
+        
+        canvas {
+            border: 1px solid #000;
+            background-color: white;
+            cursor: crosshair;
+        }
+        
+        .controls {
+            margin: 10px 0;
+        }
+        
+        button, .color-btn {
+            padding: 8px 15px;
+            margin: 0 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .color-btn {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            padding: 0;
+            border: 2px solid #333;
+        }
+        
+        .color-btn.selected {
+            border: 2px solid #ff0000;
+        }
+        
+        #clear {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Draw What You Want</h1>
+    <div class="drawing-container">
+        <div class="controls">
+            <button id="clear">Clear</button>
+            <span>Colors:</span>
+            <div class="color-btn" id="C" style="background-color: black;" title="Black"></div>
+            <div class="color-btn" id="F" style="background-color: red;" title="Red"></div>
+            <div class="color-btn" id="G" style="background-color: green;" title="Green"></div>
+            <div class="color-btn" id="D" style="background-color: blue;" title="Blue"></div>
+            <div class="color-btn" id="S" style="background-color: yellow;" title="Yellow"></div>
+            <div class="color-btn" id="V" style="background-color: violet;" title="Violet"></div>
+            <div class="color-btn" id="P" style="background-color: pink;" title="Pink"></div>
+            <div class="color-btn" id="B" style="background-color: brown;" title="Brown"></div>
+        </div>
+        <canvas id="drawingCanvas" width="800" height="500"></canvas>
+    </div>
+
+    <script src="color.js"></script>
+</body>
+</html>
