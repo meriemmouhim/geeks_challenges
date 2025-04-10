@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+    background: url('https://e0.pxfuel.com/wallpapers/521/861/desktop-wallpaper-abstract-red-blue-blur-abstract-background-and-blue-and-red-abstract.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+.container{
+    max-width: 400px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(150, 150, 150);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}        
+select, input, button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+    padding: 15px 18px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+button {
+    background-color: #000000;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    font-size: 15px;
+    padding: 12px 24px;
+    font-weight: 700;
+}
+button:hover {
+    background-color: #ffffff;
+    transform: scale(1.05); /* Optional: Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   
+    color: #000000;
+}
