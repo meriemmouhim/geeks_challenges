@@ -1,6 +1,25 @@
 {
   "type": "module",
   "dependencies": {
+    "express": "^5.1.0",
     "prompt-sync": "^4.2.0"
-  }
+  },
+  "name": "geeks",
+  "version": "1.0.0",
+  "main": "ghj.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meriemmouhim/geeks_challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meriemmouhim/geeks_challenges/issues"
+  },
+  "homepage": "https://github.com/meriemmouhim/geeks_challenges#readme",
+  "description": ""
 }

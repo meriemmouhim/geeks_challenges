@@ -11,7 +11,7 @@ class Game():
             else:
                 print('Invalid choice. Please try again.')
     def get_computer_item(self):
-        return random.choice(choices)
+        return random.choice(self.choices)
     def get_game_results(self, user_choice, computer_choice):
         if user_choice == computer_choice:
             return 'draw'
