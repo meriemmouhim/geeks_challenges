@@ -1,0 +1,48 @@
+# User Data Records
+# Format: ID, Name, Email, Join Date, Status
+
+1001, John Smith, john.smith@example.com, 2023-01-15, active
+1002, Emily Johnson, emily.j@example.com, 2023-02-20, active
+1003, Michael Brown, michael.b@example.com, 2023-03-10, inactive
+1004, Sarah Davis, sarah.d@example.com, 2023-01-05, active
+1005, Robert Wilson, robert.w@example.com, 2023-04-22, pending
+
+# Product Inventory
+# Format: ProductID, Name, Category, Price, Stock
+
+P-100, Wireless Mouse, Electronics, 24.99, 45
+P-101, Mechanical Keyboard, Electronics, 89.99, 32
+P-102, Notebook, Office Supplies, 4.99, 120
+P-103, Coffee Mug, Kitchenware, 12.50, 80
+P-104, Bluetooth Speaker, Electronics, 59.99, 18
+
+# System Log Sample
+[2023-05-01 09:15:23] INFO: System startup completed
+[2023-05-01 11:42:10] WARNING: Disk space 85% full
+[2023-05-01 14:03:47] ERROR: Connection timeout with database
+[2023-05-01 16:30:55] INFO: Backup process started
+[2023-05-01 18:45:12] INFO: System shutdown initiated
+
+# Sample JSON Data
+{
+  "website": "example.com",
+  "visitors": 4528,
+  "popular_pages": [
+    "/home",
+    "/products",
+    "/contact"
+  ],
+  "active": true
+}
+
+# Multi-line content
+This is a paragraph that spans
+multiple lines in the text file.
+It demonstrates how text content
+can be spread across several lines.
+
+Blank lines are also valid and
+can be used to separate content
+sections.
+
+# End of file

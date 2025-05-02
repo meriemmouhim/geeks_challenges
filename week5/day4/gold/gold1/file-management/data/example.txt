@@ -1,0 +1,16 @@
+This is an example text file.  
+It can be used for testing, documentation, or any other purpose.  
+
+File format: Plain text (.txt)  
+Encoding: UTF-8  
+
+You can edit this file freely.  
+Add your own text, data, or notes as needed.  
+
+Example uses:  
+- Temporary storage for notes  
+- Configuration file for a program  
+- Logging output  
+- Practice file for scripting  
+
+Last modified: [Insert date if needed]  

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+</head>
+<body>
+  <h2>Register</h2>
+  <form id="registerForm">
+    <input type="text" placeholder="Name" name="name" required><br>
+    <input type="text" placeholder="Last Name" name="lastName" required><br>
+    <input type="email" placeholder="Email" name="email" required><br>
+    <input type="text" placeholder="Username" name="username" required><br>
+    <input type="password" placeholder="Password" name="password" required><br>
+    <button id="registerBtn" type="submit" disabled>Register</button>
+  </form>
+  <p id="msg"></p>
+
+  <script>
+    const form = document.getElementById('registerForm');
+    const button = document.getElementById('registerBtn');
+
+    form.addEventListener('input', () => {
+      const allFilled = [...form.querySelectorAll('input')].every(input => input.value.trim() !== '');
+      button.disabled = !allFilled;
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+
+      try {
+        const response = await fetch('/api/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        const text = await response.text();
+        document.getElementById('msg').innerText = text;
+      } catch (err) {
+        document.getElementById('msg').innerText = 'Something went wrong.';
+      }
+    });
+  </script>
+</body>
+</html>
